@@ -1,0 +1,14 @@
+{
+    "name": "via-environment",
+    "description": "Node module to detect what environment it's running on.",
+    "version": "0.0.1",
+    "author": "Via Studio",
+    "main": "./via-environment.js",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:JeremyDunn/npm-via-environment.git"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
