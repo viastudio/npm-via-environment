@@ -1,9 +1,7 @@
 Via Environment Node.js module
 ===================
 
-## Description
-
-Provides the getEnvironment() function to detect what environment a Node.js program is running in ('dev', 'stage', 'prod').  This module is a dependency for our custom GruntJS modules.
+>provides the getEnvironment() function to detect what environment a Node.js program is running in ('dev', 'stage', 'prod').  This module is a dependency for our custom GruntJS modules.
 
 ### Installation
 
