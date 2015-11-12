@@ -9,7 +9,7 @@ module.exports = {
     getEnvironment: function() {
         os = require('os');
 
-        if (os.hostname() === 'node1.viastudio.com') {
+        if (os.hostname().match(/node1|node2|web1/i)) {
             if (__filename.match(/\/var\/www\/viastaging/i) !== null) {
                 return 'stage';
             } else if (__filename.match(/\/var\/www\/virtualhost/i) !== null) {
