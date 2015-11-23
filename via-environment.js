@@ -15,6 +15,8 @@ module.exports = {
             } else if (__filename.match(/\/var\/www\/virtualhost/i) !== null) {
                 return 'prod';
             }
+        } else if (os.hostname().match(/mrbostonstaging/i)) {
+            return 'stage';
         } else {
             return 'dev';
         }
