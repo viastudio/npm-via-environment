@@ -17,6 +17,8 @@ module.exports = {
             }
         } else if (os.hostname().match(/mrbostonstaging/i)) {
             return 'stage';
+        } else if (os.hostname().match(/mrboston-prod/i)) {
+            return 'prod';
         } else {
             return 'dev';
         }
