@@ -10,7 +10,7 @@ In your `package.json` file, add this module as a dependency.
 ```javascript
 
 "dependencies": {
-    "via-environment": "git+ssh://git@github.com:viastudio/npm-via-environment.git"
+    "via-environment": "git+ssh://git@github.com/viastudio/npm-via-environment.git"
 }
 
 ```
