@@ -19,6 +19,8 @@ module.exports = {
             return 'stage';
         } else if (os.hostname().match(/mrboston-prod/i)) {
             return 'prod';
+        } else if (os.hostname().match(/denios-us(\.magemojo)*\.com/i)) {
+            return 'prod';
         } else {
             return 'dev';
         }
