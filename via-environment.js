@@ -19,15 +19,16 @@ module.exports = {
             return 'stage';
         } else if (os.hostname().match(/mrboston-prod/i)) {
             return 'prod';
-        } else if (os.hostname() == 'jenkins') {
+        } else if (os.hostname() == 'bang') {
             cwd = process.cwd();
-
             //The only way to tell if we're deploying to Denios staging vs. prod is by looking at the filesystem path.
             //This will be the name of the jenkins job workspace
             if (cwd.match(/denios.*?production.*?deploy/i)) {
                 return 'prod';
             } else if (cwd.match(/denios.*?staging.*?deploy/i)) {
                 return 'stage';
+            } else {
+                return 'dev';
             }
         } else {
             return 'dev';
