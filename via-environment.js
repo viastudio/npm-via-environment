@@ -12,7 +12,7 @@ module.exports = {
         if (os.hostname().match(/node1|node2|web1|web2|pvalouky/i)) {
             if (__filename.match(/\/var\/www\/viastaging/i) !== null) {
                 return 'stage';
-            } else if (__filename.match(/\/var\/www\/virtualhost/i) !== null) {
+            } else if (__filename.match(/\/var\/www\/virtual_?host/i) !== null) {
                 return 'prod';
             }
         } else if (os.hostname().match(/mrbostonstaging/i)) {
