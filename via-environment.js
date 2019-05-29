@@ -9,7 +9,7 @@ module.exports = {
     getEnvironment: function() {
         os = require('os');
 
-        if (os.hostname().match(/node1|node2|web1|web2|pvalouky/i)) {
+        if (os.hostname().match(/node1|node2|web1|web2|viastaging|pvalouky/i)) {
             if (__filename.match(/\/var\/www\/viastaging/i) !== null) {
                 return 'stage';
             } else if (__filename.match(/\/var\/www\/virtual_?host/i) !== null) {
